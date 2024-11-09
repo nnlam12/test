@@ -44,7 +44,10 @@ int main() {
 	#include <stdlib.h>
 	printf("\nv: %p\na: %p\nb: %p\nsize a:%ld\nsize b:%ld\n", v,a,b, 20*sizeof(char), 5*sizeof(int));
 	#endif
-	mini_printf("abcde");
+	mini_printf("Test mini_printf\n");
+	char *text = mini_calloc(sizeof(char), 10);
+	int cnt = mini_scanf(text,10);
+	mini_printf(text);
 	mini_exit();
 }
 

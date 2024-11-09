@@ -13,5 +13,10 @@ struct malloc_element{
 //partie 2
 #define BUF_SIZE 1024
 void mini_printf(char*);
+int mini_scanf(char* buffer, int size_buffer);
+int mini_strlen(char* s);
+int mini_strcpy(char* s, char *d);
+int mini_strncpy(char* s, char *d, int n);
+int mini_strcmp(char* s1, char* s2);
 #endif
 
